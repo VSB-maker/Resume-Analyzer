@@ -57,7 +57,7 @@ def calculate_similarity_bert(text1, text2):
 
 
 def get_report(resume,job_desc):
-    client = Groq(api_key="GROQ_API_KEY=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")
+    client = Groq(api_key=api_key)
 
     # Change the prompt to get the results in your style
     prompt=f"""
@@ -173,5 +173,6 @@ if st.session_state.form_submitted:
         icon=":material/download:",
         )
     
+
 
 # <-------------- End of the Work Flow --------------->

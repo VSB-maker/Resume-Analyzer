@@ -160,7 +160,7 @@ if st.session_state.form_submitted:
 
     # Displaying Report 
     st.markdown(f"""
-            <div style='text-align: left; background-color: #FFFFFF; padding: 10px; border-radius: 10px; margin: 5px 0;'>
+            <div style='text-align: left; background-color: #808080; padding: 10px; border-radius: 10px; margin: 5px 0;'>
                 {report}
             </div>
             """, unsafe_allow_html=True)
@@ -176,6 +176,7 @@ if st.session_state.form_submitted:
 
 
 # <-------------- End of the Work Flow --------------->
+
 
 
 

@@ -57,7 +57,7 @@ def calculate_similarity_bert(text1, text2):
 
 
 def get_report(resume,job_desc):
-    client = Groq(api_key=api_key)
+    client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
     # Change the prompt to get the results in your style
     prompt=f"""

@@ -14,6 +14,13 @@ load_dotenv()
 # Fetch the key from the environment
 api_key = os.getenv("GROQ_API_KEY")
 
+# If deployed on Streamlit Cloud, use Secrets
+if not api_key:
+    api_key = st.secrets.get("GROQ_API_KEY")
+
+if not api_key:
+    st.error("Groq API Key is missing.")
+    st.stop()
 
 #  Session States to store values 
 if "form_submitted" not in st.session_state:
